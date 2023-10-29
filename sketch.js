@@ -7,7 +7,7 @@ function setup() {
   createCanvas(640, 240);
   reset();
   // Create liquid object
-  liquid = new Liquid(0, height / 2, width, height / 2, 0.1);
+  liquid = new Liquid(0, height / 2, width, height / 2, 0.25);
 }
 
 function draw() {
@@ -43,7 +43,7 @@ function mousePressed() {
 
 // Restart all the Mover objects randomly
 function reset() {
-  for (let i = 0; i < 9; i++) {
-    movers[i] = new Mover(40 + i * 70, 0, random(0.5, 3));
+  for (let i = 0; i < 8; i++) {
+    movers[i] = new Mover(55 + i * 75, 0, random(0.3, 4.5));
   }
 }
