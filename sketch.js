@@ -7,7 +7,7 @@ function setup() {
   createCanvas(640, 240);
   reset();
   // Create liquid object
-  liquid = new Liquid(0, height / 2, width, height / 2, -0.05);
+  liquid = new Liquid(0, height / 2, width, height / 2, -0.007);
 }
 
 function draw() {
