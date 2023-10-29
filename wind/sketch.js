@@ -1,7 +1,7 @@
 let ball;
 
 function setup() {
-  createCanvas(400, 200);
+  createCanvas(400, 800);
 
   ball = new Particle();
 }
@@ -23,6 +23,16 @@ function draw() {
     let wind = createVector(-0.1, 0);
     ball.addForce(wind);
   }
+
+  if (keyIsDown(UP_ARROW)) {
+    let wind = createVector(0, -1);
+    ball.addForce(wind);
+  }
+
+    if (keyIsDown(DOWN_ARROW)) {
+      let wind = createVector(0, 1);
+      ball.addForce(wind);
+    }
   
 
   ball.update();
