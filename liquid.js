@@ -1,6 +1,4 @@
-// The Nature of Code
-// Daniel Shiffman
-// http://natureofcode.com
+//유체 저항 실험해보기
 
 class Liquid {
   constructor(x, y, w, h, c) {
